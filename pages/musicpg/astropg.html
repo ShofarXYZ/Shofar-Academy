@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<title>SHOFAR XYZ - ACADEMY SCIENCE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type=image/png" href="Favicon.png">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Shofarlogo.PNG");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+
+  
+}
+table, th, td {
+  border: 2px solid rgb(134, 134, 134);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  background-color: #fddfd3;
+ 
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../../index.html" class="w3-bar-item w3-button w3-wide">HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="" class="w3-button"><i class=""></i> ASTRONOMIE // DEUSTCH</a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ASTRONOMY</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">BIOi</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">CALCULOS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">CODE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">PHILOSOPHY</a>
+</nav>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ASTRONOMIE</h3>
+  <p class="w3-center w3-large">Untersuchung des Universums, der Weltraumobjekte 
+    (Planeten, Kometen, Galaxien, Sterne usw.)und des Wetters.</p>
+<!-- Topicsbar (sit on top) -->
+<table style="width:100%">
+  
+  <tr>
+    <th>SOLARANLAGE</th>
+    <th>UNIVERSUM</th> 
+    <th>ÜBERWACHUNG</th>
+    <th>LUFTFAHRT</th>
+  </tr>
+  <tr>
+    <td><a href="https://de.wikipedia.org/wiki/Sonne">Sonne</a></td>
+    <td><a href="https://de.wikipedia.org/wiki/Nebel_(Astronomie)">Nebel</a></td> 
+    <td><a href="https://de.wikipedia.org/wiki/Teleskop">Teleskop</a></td> <!-- Graphics JavaScript -->
+    <td><a href="https://en.wikipedia.org/wiki/Aviation#Lighter_than_air">Theorie</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://de.wikipedia.org/wiki/Merkur_(Planet)">Merkur</a></td>
+    <td><a href="https://de.wikipedia.org/wiki/Asteroid">Asteroiden</a></td> 
+    <td><a href="https://en.wikipedia.org/wiki/Stellarium_(software)">Software</a></td> <!-- Graphics JavaScript -->
+    <td><a href="https://www.redemet.aer.mil.br/">REDEMET</a></td> <!-- Link -->
+  </tr>
+  <tr>
+    <td>---</td>
+    <td>---</td> 
+    <td><a href="https://fr.wikipedia.org/wiki/Optique">Grafische Analyse</a></td> <!-- Graphics JavaScript -->
+    <td><a href="https://www.aisweb.aer.mil.br/">AIS</a></td> <!-- Link -->
+  </tr>
+</table>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+    
+    
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<br><br><br><br><br><br><br><br>
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
